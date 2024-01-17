@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 3. Ch8 (JS Methods) </title>
+</head>
+<body>
+    <h1> 3. Ch8 : Built-in JS Methods</h1>
+    <hr>
+
+
+        <!-- FROM PAGE 175
+        - AVOID using because allows opportunity for malicious code to be inserted from external code
+        (securty risks & hinders performance)
+        - GOOD USES:
+        a) Creating templates
+        b) Own interpreter
+        -->
+
+
+
+    <input onchange="go(this)"></input>
+        <script>
+            function go(e) {
+                eval(e.value);
+            }
+        </script>
+
+
+<!-- NOTE: Put the following code in the input box. It will be executed:
+    document.body.style.backgroundColor = "pink"; 
+
+
+     FROM PAGE 175
+        - AVOID using because allows opportunity for malicious code to be inserted from external code
+        (securty risks & hinders performance)
+        - GOOD USES:
+        a) Creating templates
+        b) Own interpreter
+        
+-->
+
+
+
+    <script src="3. Ch8.js"> </script>
+    
+</body>
+</html>
