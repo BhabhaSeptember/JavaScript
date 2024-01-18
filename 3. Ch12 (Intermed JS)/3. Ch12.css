@@ -1,0 +1,28 @@
+/* PRACTICE EXERCISE 12.7 (SEE HTML & JS) */
+/* .ready {
+    background-color: #ddd;
+    color: red;
+    text-decoration: line-through;
+    } */
+
+
+
+    /* ------------------------------------------------------- */
+
+    /* CHAPTER PROJECTS
+    2. FORM VALIDATOR (SEE HTML & JS) */
+        .hide {
+        display: none;
+        }
+        .error {
+        color: red;
+        font-size: 0.8em;
+        font-family: sans-serif;
+        font-style: italic;
+        }
+        input {
+        border-color: #ddd;
+        width: 400px;
+        display: block;
+        font-size: 1.5em;
+        }

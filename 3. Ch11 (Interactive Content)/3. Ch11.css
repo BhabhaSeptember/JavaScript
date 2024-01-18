@@ -59,11 +59,11 @@
 
     /* CHAPTER PROJECTS
     1. BUILDING ANALYTICS */
-    .box{
+    /* .box{
         width:200px;
         height:100px;
         border:1px solid black
-    }
+    } */
 
 
 
@@ -90,8 +90,8 @@
 
 
         /* 3. MOUSE POSITION TRACKER */
-
-        /* .holder {
+/* 
+        .holder {
             display: inline-block;
             width: 300px;
             height: 300px;
@@ -105,7 +105,7 @@
 
 
             /* 4. BOX CLICKER SPEED TEST GAME */
-            /* .output {
+            .output {
                 width: 500px;
                 height: 500px;
                 border: 1px solid black;
@@ -124,4 +124,4 @@
                 text-align: center;
                 padding: 10px;
                 font-size: 1.3em;
-                } */
+                }
