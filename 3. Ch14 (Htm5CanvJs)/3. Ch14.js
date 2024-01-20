@@ -319,43 +319,72 @@
 // setInterval(moveBall, 10); //10ms
 
 //DRAWING ON CANVAS WITH A MOUSE
-window.onload = init;
+// window.onload = init;
 
-let bgC = document.getElementById("bgColor");
-// let bgColor = "pink";
+// let bgC = document.getElementById("bgColor");
+// // let bgColor = "pink";
 
-bgC.addEventListener("change", function () {
-  bgColor = event.target.value;  //change color according to color picker selection
-});
+// bgC.addEventListener("change", function () {
+//   bgColor = event.target.value;  //change color according to color picker selection
+// });
 
-let pos = {
-  x: 0,
-  y: 0,
-};
-let canvas = document.getElementById("canvas");
-let ctx = canvas.getContext("2d");
-canvas.width = 700;
-canvas.height = 700;
+// let pos = {
+//   x: 0,
+//   y: 0,
+// };
+// let canvas = document.getElementById("canvas");
+// let ctx = canvas.getContext("2d");
+// canvas.width = 700;
+// canvas.height = 700;
 
-function setPosition(e) {
-  pos.x = e.pageX; //page property to get current position of mouse
-  pos.y = e.pageY;
-}
+// function setPosition(e) {
+//   pos.x = e.pageX; //page property to get current position of mouse
+//   pos.y = e.pageY;
+// }
 
-function init() {
-  canvas.addEventListener("mousemove", draw);
-  canvas.addEventListener("mousemove", setPosition); //change current position on canvas
-  canvas.addEventListener("mouseenter", setPosition);
-}
+// function init() {
+//   canvas.addEventListener("mousemove", draw);
+//   canvas.addEventListener("mousemove", setPosition); //change current position on canvas
+//   canvas.addEventListener("mouseenter", setPosition);
+// }
 
-function draw(e) {
-  if (e.buttons !== 1) return; //returns from method if mouse is not clicked
-  ctx.beginPath();
-  ctx.moveTo(pos.x, pos.y);
-  setPosition(e); //setting new coordinates to draw below line
-  ctx.lineTo(pos.x, pos.y);
-  ctx.lineWidth = 10;
-  ctx.lineCap = "round"; //creates smooth lines
-  ctx.stroke();
+// function draw(e) {
+//   if (e.buttons !== 1) return; //returns from method if mouse is not clicked
+//   ctx.beginPath();
+//   ctx.moveTo(pos.x, pos.y);
+//   setPosition(e); //setting new coordinates to draw below line
+//   ctx.lineTo(pos.x, pos.y);
+//   ctx.lineWidth = 10;
+//   ctx.lineCap = "round"; //creates smooth lines
+//   ctx.stroke();
 
-}
+// }
+
+//SAVING DYNAMIC IMAGES
+//Note: Converting canvas to an image then saving it
+//Change canvas to dataURL
+//Make URL source for img
+//Save button updates img with generated URL from canvas
+
+//EXAMPLE
+// const canvas = document.getElementById("canvas");
+// const ctx = canvas.getContext("2d");
+// canvas.width = 200;
+// canvas.height = 200;
+// const penColor = document.getElementById("squareColor");
+// penColor.addEventListener("change", function () {
+//   color = event.target.value;
+//   draw(color);
+// });
+// document.getElementById("save").addEventListener("click", function () {
+//   let dataURL = canvas.toDataURL();
+//   document.getElementById("holder").src = dataURL;
+// });
+// function draw(color) {
+//   ctx.fillStyle = color;
+//   ctx.fillRect(70, 70, 100, 100);
+// }
+
+
+
+//MEDIA ON PAGE (SEE HTML)
