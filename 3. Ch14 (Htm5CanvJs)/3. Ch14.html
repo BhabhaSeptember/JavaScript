@@ -20,15 +20,14 @@
     <br /><br />
     <input type="file" onchange="uploadFile(this.files)" />
     <div id="message"></div>
-
-
     <br />
+
+
     EXAMPLE 2 (MULTIPLE FILES)
     <br />
     <br />
     <input type="file" multiple onchange="uploadFile(this.files)" />
-    <div id="message"></div>
-     -->
+    <div id="message"></div> -->
 
     <!-- READING FILES (SEE JS) 
     <br />
@@ -68,7 +67,10 @@
   <canvas id="canvas" width="640" height="640">Not Supported</canvas>
  -->
 
-    <!-- ADDING & UPLOADING IMAGES TO CANVAS,
+    <!-- 
+
+
+    ADDING & UPLOADING IMAGES TO CANVAS,
     <br />
     EXAMPLE 1
     <br />
@@ -76,10 +78,12 @@
     <canvas id="c1"></canvas>
     <br />
     <br />
+    <hr />
     <img id="flower" src="flower.jpg" />
     <br />
     <br />
-    EXAMPLE 2  
+    <hr />
+    EXAMPLE 2
     <br />
     <br />
     <canvas id="canvas1"></canvas>
@@ -87,6 +91,7 @@
     <canvas id="canvas3"></canvas>
     <br />
     <br />
+    <hr />
     EXAMPLE 3
     <input type="file" id="imgLoader" />
     <br />
@@ -119,8 +124,8 @@
     <img src="" width="200" height="200" id="holder" />
     <input type="button" id="save" value="save" /> -->
 
-    MEDIA ON PAGE 
-    <!-- <br />
+    <!-- MEDIA ON PAGE
+    <br />
     1. AUDIO :
     <p>- Control attribute enables user to control pause, play & volume</p>
     <p>- Autoplay attribute starts media automatically</p>
@@ -138,11 +143,12 @@
 
     <!-- 3. LINKING TO YT
     <p>- The iframe element allows another webpage inside the current webpage</p>
+    <p> - Watch video below on Digital Accessibility:</p>
     <iframe
       width="500"
       height="500"
-      src="https://www.youtube.com/embed/v6VTv7czb1Y"
-    >
+      src="https://www.youtube.com/embed/gRvkgoF4bWo"
+     >
     </iframe> -->
 
     <!-- DIGITAL ACCESSIBILITY IN HTML <br />
@@ -159,6 +165,50 @@
       height="200"
       alt="rainbow colored umbrella"
     /> -->
+
+    <!-- ------------------------------------------------------------------------------------------ -->
+
+    CHAPTER PROJECTS
+    <!-- <br>
+    <br>
+    1. MATRIX EFFECT
+    <div class="output"></div>
+ -->
+
+
+
+    
+      <!-- <br />
+    <br />
+    2. COUNTDOWN CLOCK (SEE CSS & JS)
+    <div>
+      <input type="date" name="endDate" />
+      <div class="clock">
+        <span><span class="days">0</span> Days</span>
+        <span><span class="hours">0</span> Hours</span>
+        <span><span class="minutes">0</span> Minutes</span>
+        <span><span class="seconds">0</span> Seconds</span>
+      </div>
+    </div>  -->
+
+
+
+    <br />
+    <br />
+    3. ONLINE PAINT APP
+    <br />
+    <br />
+    <canvas id="canvas" width="600" height="400"></canvas>
+    <div>
+      <button class="save">Save</button>
+      <button class="clear">clear</button>
+      <span>Color: <input type="color" value="#ffff00" id="penColor" /></span>
+      <span
+        >Width: <input type="range" min="1" max="20" value="10" id="penWidth"
+      /></span>
+    </div>
+    <div class="output"></div>
+
     <script src="3. Ch14.js"></script>
   </body>
 </html>
