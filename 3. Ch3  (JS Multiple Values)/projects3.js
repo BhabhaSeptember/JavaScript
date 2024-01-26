@@ -1,5 +1,3 @@
-
-
 // /* CHAPTER PROJECTS */
 // /* Manipulating an Array */
 // // const theList = ['Laurence' ,' Svekis' ,true ,35 ,null ,undefined ,{test: 'one', score: 55} ,['one', 'two']];
