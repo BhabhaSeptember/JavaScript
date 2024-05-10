@@ -19,8 +19,12 @@
 // function uploadFile(files) {
 //   for (let i = 0; i < files.length; i++) {
 //         message.innerHTML += files[i].name + "<br>";
+//         console.log(files);
 //   }
 // }
+
+
+
 
 // //READING FILES
 // let message = document.getElementById("message");
@@ -28,6 +32,7 @@
 //   let fr = new FileReader();
 //   fr.onload = function (e) {  //sends event data
 //     message.innerHTML = e.target.result;
+//     console.log(files);
 //   };
 //   fr.readAsText(files[0]); //reading data using readAs() method on FileReader object
 // }
@@ -57,6 +62,11 @@
 //   }
 // }
 
+
+
+
+
+
 // GETTING POSITION DATA WITH GEOLOCATION
 //EXAMPLE 1
 //Below inspects 'navigator.geolocation' in browser console
@@ -68,12 +78,18 @@
 //EXAMPLE 2
 //Retrieve current position of user
 // window.onload = init;
+
 // function init() {
 //   navigator.geolocation.getCurrentPosition(showGeoPosition);
 // }
 // function showGeoPosition(data) {
 //       console.dir(data);
 // }
+
+
+
+
+
 
 //HTML5 CANVAS (SEE HTML)
 // let canvas = document.getElementById("c1");
@@ -82,6 +98,8 @@
 // canvas.height = 500; //px
 // ctx.fillStyle = "red";
 // ctx.fillRect(250, 250, 100, 100);  //(x-coordin, y-coordin, width, height)
+
+
 
 //PRACTICE EXERCISE 14.2 (SEE HTML & CSS)
 // const canvas = document.querySelector("#canvas");
