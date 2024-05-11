@@ -6,13 +6,17 @@
 //   message.innerText = "No FileReader :( ";
 // }
 
+
+
+
+
 //UPLOADING FILES (SEE HTML)
 // EXAMPLE 1 (SINGLE FILE)
-// let message = document.getElementById("message");
-// function uploadFile(files) {
-//   console.log(files[0]);
-//   message.innerText = files[0].name;
-// }
+let message = document.getElementById("message");
+function uploadFile(files) {
+  console.log(files[0]);
+  message.innerText = files[0].name;
+}
 
 // EXAMPLE 2 (MULTIPLE FILES)
 // let message = document.getElementById("message");
@@ -32,7 +36,7 @@
 //   let fr = new FileReader();
 //   fr.onload = function (e) {  //sends event data
 //     message.innerHTML = e.target.result;
-//     console.log(files);
+//     // console.log(files);
 //   };
 //   fr.readAsText(files[0]); //reading data using readAs() method on FileReader object
 // }
